@@ -1,0 +1,180 @@
+HTML
+<!--npm install -g http-server
+npm install -g live-server
+live-server --port=8080
+imagem-  Dentro dos elementos <article>, inclua a tag <img> com o atributo src apontando para o caminho da imagem.
+acessibilidade atributos aria aria-label="Beyoncé - Foto da cantora Beyoncé"
+css- <link rel="stylesheet" href="styles.css">
+
+-->
+
+
+
+CSS
+/*
+display: flex; e flex-wrap: wrap; são usados para criar um layout flexível onde os cards são distribuídos em várias linhas conforme necessário.
+justify-content: center; alinha os cards no centro horizontalmente dentro do contêiner flexível.
+width: 200px; define uma largura fixa para os cards. Você pode ajustar esse valor conforme necessário para corresponder ao tamanho desejado para os cards.
+height: auto; mantém a proporção da imagem, garantindo que ela não seja distorcida.
+margin: 10px; adiciona uma margem ao redor dos cards para criar espaço entre eles.
+border-radius: 8px; adiciona bordas arredondadas aos cards para uma aparência mais suave.
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); adiciona uma leve sombra aos cards para dar a impressão de que estão flutuando.
+margin: 10px; adiciona uma margem de 10 pixels ao redor de cada imagem para criar espaço entre elas.*/
+
+
+
+HTML (linguagem de marcação):
+
+
+- `header`, `nav`, `section`, `article`, `footer`: Esses são elementos semânticos do HTML utilizados para organizar e estruturar o conteúdo de uma página web. O `header` representa o cabeçalho da página, o `nav` é usado para agrupar links de navegação, `section` é uma seção genérica da página, `article` é utilizado para conteúdo autônomo e independente, e `footer` representa o rodapé da página.
+
+```html
+<header>
+  <!-- Conteúdo do cabeçalho -->
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+    <!-- Mais links de navegação -->
+  </ul>
+</nav>
+
+<section>
+  <!-- Conteúdo da seção -->
+</section>
+
+<article>
+  <!-- Conteúdo do artigo -->
+</article>
+
+<footer>
+  <!-- Conteúdo do rodapé -->
+</footer>
+```
+
+- Adicionar imagens: Para adicionar imagens em uma página HTML, utiliza-se o elemento `<img>` com o atributo `src` especificando o caminho da imagem e o atributo `alt` descrevendo o conteúdo da imagem.
+
+```html
+<img src="caminho/para/imagem.jpg" alt="Descrição da imagem">
+```
+
+- Atributos `aria`: São atributos do HTML utilizados para melhorar a acessibilidade da página para usuários com deficiência, fornecendo informações adicionais sobre elementos da página.
+
+```html
+<section aria-labelledby="titulo-secao">
+  <h2 id="titulo-secao">Título da Seção</h2>
+  <!-- Conteúdo da seção -->
+</section>
+```
+
+- `target='_blank'`: É um atributo usado em links (`<a>`) que indica que o link deve ser aberto em uma nova janela ou aba do navegador.
+
+```html
+<a href="https://www.exemplo.com" target="_blank">Abrir em nova aba</a>
+```
+
+- Input de texto: É um elemento HTML (`<input>`) utilizado para permitir que o usuário insira dados de texto, como nome, senha, e-mail, entre outros.
+
+```html
+<input type="text" placeholder="Digite seu nome">
+```
+
+CSS (linguagem de estilo em cascata):
+
+- `display: flex` e `display: grid`: São propriedades do CSS utilizadas para controlar o layout dos elementos. O `flex` cria um container flexível que pode expandir e contrair seus itens para preencher o espaço disponível, enquanto o `grid` cria um layout de grade bidimensional.
+
+```css
+.container {
+  display: flex; /* ou display: grid; */
+}
+```
+
+- `justify-content`: É uma propriedade do CSS utilizada em containers flexíveis para alinhar os itens ao longo do eixo principal do container.
+
+```css
+.container {
+  display: flex;
+  justify-content: center; /* ou flex-start, flex-end, space-between, space-around, space-evenly */
+}
+```
+
+- Efeito `hover`: É uma técnica do CSS que permite aplicar estilos a um elemento quando o cursor do mouse é colocado sobre ele.
+
+```css
+.button:hover {
+  background-color: #ff0000;
+}
+```
+
+- Estilo `opacity`: É uma propriedade do CSS que define a transparência de um elemento. Um valor de `1` significa opaco, e um valor de `0` significa totalmente transparente.
+
+```css
+.elemento {
+  opacity: 0.5;
+}
+```
+
+- Mídia queries: São regras do CSS que permitem aplicar estilos diferentes dependendo das características do dispositivo, como largura da tela, orientação, resolução, entre outros.
+
+```css
+@media (max-width: 768px) {
+  .elemento {
+    /* Estilos para telas menores que 768px */
+  }
+}
+```
+
+- Alinhamento de divs/imgs: É o processo de alinhar elementos, como `<div>` ou `<img>`, dentro de um container usando propriedades CSS como `text-align`, `vertical-align` e `margin`.
+
+```css
+.container {
+  text-align: center; /* Alinha os elementos horizontalmente */
+}
+
+.img-container {
+  display: flex;
+  justify-content: center; /* Alinha os elementos horizontalmente */
+  align-items: center; /* Alinha os elementos verticalmente */
+}
+```
+
+JavaScript (linguagem de programação):
+
+- `localStorage`: É uma API do navegador que permite armazenar dados localmente no navegador do usuário.
+
+```javascript
+localStorage.setItem('chave', 'valor'); // Define um item no localStorage
+const valor = localStorage.getItem('chave'); // Obtém o valor de um item do localStorage
+```
+
+- Alterar título via JavaScript: É possível alterar o título da página dinamicamente usando JavaScript, modificando a propriedade `document.title`.
+
+```javascript
+document.title = 'Novo Título da Página'; // Altera o título da página
+```
+
+- `fetch`: É uma função do JavaScript utilizada para fazer requisições HTTP assíncronas. É comumente usada para buscar dados de uma API da web.
+
+```javascript
+fetch('https://api.com/dados')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error(error));
+```
+
+- `new Date()`: É um construtor em JavaScript utilizado para criar um novo objeto de data, que representa a data e hora atuais.
+
+```javascript
+const dataAtual = new Date(); // Cria um novo objeto de data representando a data e hora atuais
+```
+
+- Função `addEventListener` com `click`: É utilizada para adicionar um evento de clique a um elemento HTML, que é acionado quando o elemento é clicado.
+
+```javascript
+const botao = document.querySelector('button');
+botao.addEventListener('click', () => {
+  console.log('Botão clicado!');
+});
+```

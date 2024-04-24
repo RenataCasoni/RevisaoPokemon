@@ -1,0 +1,6 @@
+section img {
+    width: 150px; /* Largura da imagem */
+    height: 150px; /* Altura da imagem */
+    cursor: pointer; /* Altera o cursor para a forma de mão ao passar o mouse sobre a imagem */
+  }
+  
